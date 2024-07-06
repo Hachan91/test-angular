@@ -1,0 +1,26 @@
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.playlist-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.playlist-card img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1200px) {
+  .playlist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .playlist-grid {
+    grid-template-columns: 1fr;
+  }
+}

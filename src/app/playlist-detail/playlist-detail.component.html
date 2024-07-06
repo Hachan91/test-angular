@@ -1,0 +1,13 @@
+<div class="playlist-header">
+  <img [src]="playlist.picture_medium" alt="{{ playlist.title }}">
+  <h2>{{ playlist.title }}</h2>
+  <p>{{ playlist.creator.name }}</p>
+  <p>{{ playlist.duration | duration }}</p>
+</div>
+<div class="track-list" (scroll)="onScroll()">
+  <div *ngFor="let track of tracks" class="track">
+    <h4>{{ track.title }}</h4>
+    <p>{{ track.artist.name }}</p>
+    <p>{{ track.duration | duration }}</p>
+  </div>
+</div>
