@@ -40,4 +40,7 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of eb02c0cc (Initial commit)
